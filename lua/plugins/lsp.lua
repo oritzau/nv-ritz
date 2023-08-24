@@ -6,7 +6,7 @@ lsp.ensure_installed({
     "rust_analyzer",
     "clangd",
     "pylsp",
-    "java_language_server",
+    "jdtls",
     "lua_ls",
 })
 

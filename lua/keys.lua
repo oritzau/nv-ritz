@@ -1,5 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
+
+vim.g.mapleader = " "
+vim.g.localleader = "\\"
+
 -- remap the key used to leave insert mode
 
 -- insert
