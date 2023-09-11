@@ -5,9 +5,11 @@ lsp.preset("recommended")
 lsp.ensure_installed({
     "rust_analyzer",
     "clangd",
-    "pylsp",
+    "jedi_language_server",
     "jdtls",
     "lua_ls",
+    "asm_lsp",
+    "ltex",
 })
 
 lsp.on_attach(function(client, bufnr)

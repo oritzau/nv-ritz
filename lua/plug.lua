@@ -1,6 +1,7 @@
-return require('packer').startup(function(use)
+return require("packer").startup(function(use)
     -- theme
-    use  "lunarvim/darkplus.nvim"
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use "shaunsingh/moonlight.nvim"
     -- packer
     use "wbthomason/packer.nvim"
     --tree
@@ -35,25 +36,27 @@ return require('packer').startup(function(use)
     use "mbbill/undotree"
     -- lsp
     use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
+        "VonHeikemen/lsp-zero.nvim",
+        branch = "v2.x",
         requires = {
         -- LSP Support
         {"neovim/nvim-lspconfig"},             -- Required
-        {'williamboman/mason.nvim'},           -- Optional
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+        {"williamboman/mason.nvim"},           -- Optional
+        {"williamboman/mason-lspconfig.nvim"}, -- Optional
 
         -- Autocompletion
-        {'hrsh7th/nvim-cmp'},     -- Required
-        {'hrsh7th/cmp-nvim-lsp'}, -- Required
-        {'L3MON4D3/LuaSnip'},     -- Required
+        {"hrsh7th/nvim-cmp"},     -- Required
+        {"hrsh7th/cmp-nvim-lsp"}, -- Required
+        {"L3MON4D3/LuaSnip"},     -- Required
         }
     }
     -- telescope
     use {
       "nvim-telescope/telescope.nvim", tag = "0.1.2",
-    -- or                            , branch = '0.1.x',
+    -- or                            , branch = "0.1.x",
       requires = {"nvim-lua/plenary.nvim"}
     }
+    -- vimtex
+    use "lervag/vimtex"
     -- pee pee poo poo (Meghan)
 end)

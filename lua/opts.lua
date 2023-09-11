@@ -4,7 +4,7 @@ local cmd = vim.api.nvim_command
 -- [[ Theme ]]
 opt.syntax = "ON"
 opt.termguicolors = true
-cmd("colorscheme darkplus")
+cmd("colorscheme catppuccin-mocha")
 
 -- context
 opt.number = true
