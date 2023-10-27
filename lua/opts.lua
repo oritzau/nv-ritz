@@ -4,7 +4,10 @@ local cmd = vim.api.nvim_command
 -- [[ Theme ]]
 opt.syntax = "ON"
 opt.termguicolors = true
-cmd("colorscheme catppuccin-mocha")
+cmd("colorscheme gruvbox")
+-- make shit seethrough
+vim.cmd([[highlight Normal guibg=none]])
+vim.cmd([[highlight NonText guibg=none]])
 
 -- context
 opt.number = true
@@ -39,3 +42,7 @@ vim.opt.updatetime = 50
 vim.opt.guicursor = ""
 
 vim.g.vimtex_view_method = 'zathura'
+
+-- don't auto close md preview on buffer switch
+vim.g.mkdp_auto_close = 0
+

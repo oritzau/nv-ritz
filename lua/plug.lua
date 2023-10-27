@@ -1,7 +1,7 @@
 return require("packer").startup(function(use)
     -- theme
     use { "catppuccin/nvim", as = "catppuccin" }
-    use "shaunsingh/moonlight.nvim"
+    use {"morhetz/gruvbox"}
     -- packer
     use "wbthomason/packer.nvim"
     --tree
