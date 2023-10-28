@@ -39,7 +39,7 @@ opt.clipboard = "unnamedplus"
 
 -- other
 vim.opt.updatetime = 50
-vim.opt.guicursor = ""
+-- vim.opt.guicursor = ""
 
 vim.g.vimtex_view_method = 'zathura'
 
